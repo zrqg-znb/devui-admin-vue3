@@ -1,0 +1,24 @@
+{
+  "name": "vite-templates",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "../vite-templates/node_modules/.bin/vite",
+    "build": "../vite-templates/node_modules/.bin/vue-tsc -b && vite build",
+    "preview": "../vite-templates/node_modules/.bin/vite preview"
+  },
+  "dependencies": {
+    "@devui-design/icons": "^1.4.0",
+    "devui-theme": "^0.1.0",
+    "vue": "^3.5.17",
+    "vue-devui": "^1.6.33"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4",
+    "vue-tsc": "^2.2.12"
+  }
+}
