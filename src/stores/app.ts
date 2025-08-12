@@ -9,35 +9,42 @@ export const useAppStore = defineStore('app', () => {
 
     const menuItems = ref<MenuItem[]>([
         {
-            id: 'dashboard',
-            title: '仪表盘',
-            icon: 'home',
-            path: '/dashboard'
+            id: 'design',
+            title: '设计',
+            icon: 'design',
+            path: '/design'
         },
         {
-            id: 'user',
-            title: '用户管理',
-            icon: 'user',
-            children: [
-                { id: 'user-list', title: '用户列表', path: '/user/list', icon: 'list' },
-                { id: 'user-detail', title: '用户详情', path: '/user/detail', icon: 'detail' }
-            ]
+            id: 'language',
+            title: '语言',
+            icon: 'language',
+            path: '/language'
         },
         {
-            id: 'system',
-            title: '系统管理',
-            icon: 'setting',
+            id: 'components',
+            title: '组件',
+            icon: 'components',
+            path: '/components'
+        },
+        {
+            id: 'life',
+            title: '生活',
+            icon: 'life',
+            path: '/life'
+        },
+        {
+            id: 'document',
+            title: '文档',
+            icon: 'document',
+            path: '/document'
+        },
+        {
+            id: 'admin',
+            title: 'Admin区块',
+            icon: 'admin',
             children: [
-                {
-                    id: 'system-settings',
-                    title: '系统设置',
-                    icon: 'config',
-                    children: [
-                        { id: 'basic-settings', title: '基础设置', path: '/system/settings/basic', icon: 'setting' },
-                        { id: 'security-settings', title: '安全设置', path: '/system/settings/security', icon: 'shield' }
-                    ]
-                },
-                { id: 'system-logs', title: '系统日志', path: '/system/logs', icon: 'log' }
+                { id: 'admin-dashboard', title: 'DevUI Admin', path: '/admin/devui-admin', icon: 'dashboard' },
+                { id: 'admin-icons', title: 'DevUI 图标库', path: '/admin/devui-icons', icon: 'icons' }
             ]
         }
     ])
